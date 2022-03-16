@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+header {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > textBox {
+  width: 90%;
+  position: relative;
+  top: 12px;
+  font-size: 23px;
+}
+
+textBox > span {
+  font-size: 15px;
+  color: gray;
+}
+
+header > a {
+  margin: 10px;
+}
+
+addToDo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+}
+
+addToDo > a {
+  margin: 0px 10px;
+}
+
+addToDo > editTask {
+  width: 90%;
+  position: relative;
+  top: 10px;
+}
+
+editTask > form > input {
+  width: 720px;
+  padding: 10px;
+}
+
+list {
+  margin: 10px;
+}
+ul li {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
