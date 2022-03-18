@@ -46,10 +46,29 @@ addToDo > editTask {
   position: relative;
   top: 10px;
 }
+editTask > form {
+  margin: 10px 0px;
+}
 
 editTask > form > input {
   width: 720px;
   padding: 10px;
+}
+
+editTask > links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+editTask > links > div {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+editTask > links > div:hover {
+  background-color: rgba(128, 128, 128, 0.616);
 }
 
 list {
