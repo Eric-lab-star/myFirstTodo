@@ -90,7 +90,7 @@ editTask > links > div {
   padding: 5px;
 }
 editTask > links > div:hover {
-  background-color: rgba(128, 128, 128, 0.616);
+  background-color: rgba(214, 183, 183, 0.616);
 }
 
 #list {
@@ -98,7 +98,7 @@ editTask > links > div:hover {
 }
 
 #list > li {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid whitesmoke;
   padding: 10px 0px;
 }
 
