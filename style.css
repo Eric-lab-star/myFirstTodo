@@ -1,8 +1,8 @@
 body {
   margin: 0px;
   font-family: "Oswald", sans-serif;
-  max-width: 800px;
-  margin: 0px auto;
+  padding: 0px 10px;
+  height: 100vh;
 }
 
 header {
@@ -11,48 +11,70 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+header > a {
+  margin-right: 10px;
+}
 header > textBox {
-  width: 90%;
+  width: 100%;
   position: relative;
-  top: 12px;
+  top: 10px;
   font-size: 23px;
 }
 
 textBox > span {
   font-size: 15px;
-  color: gray;
 }
 
-header > a {
+#leftLinks {
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 14px;
+  margin-right: 10px;
+}
+#leftLinks > a {
+  padding: 10px;
+  min-width: max-content;
 }
 
 addToDo {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
-  height: 100px;
+  background-color: whitesmoke;
+  height: 80px;
+  padding: 10px 0;
+  border-radius: 10px;
 }
 
 addToDo > a {
-  margin: 0px 10px;
+  margin: -15px 10px 10px 10px;
 }
 
 addToDo > editTask {
-  width: 90%;
-  position: relative;
-  top: 10px;
+  width: 100%;
+  padding-right: 20px;
 }
 editTask > form {
   margin: 10px 0px;
 }
 
 editTask > form > input {
-  width: 720px;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  padding-right: 0px;
+  border-style: none;
+  border-bottom: 1px solid royalblue;
+}
+editTask > form > input::placeholder {
+  color: royalblue;
+}
+
+editTask > form > input:focus {
+  outline: none;
 }
 
 editTask > links {
@@ -71,10 +93,15 @@ editTask > links > div:hover {
   background-color: rgba(128, 128, 128, 0.616);
 }
 
-list {
+#list {
   margin: 10px;
 }
-ul li {
+
+#list > li {
   border-bottom: 1px solid black;
-  padding: 10px;
+  padding: 10px 0px;
+}
+
+#list > li > i {
+  margin-right: 10px;
 }
